@@ -3,6 +3,8 @@
 # thing is NOT to "complete labs," the important thing is to learn the skills you need
 # in order to complete the rest of this course and be ready for the next course!
 
+name = "Shane"
+
 #Method that takes one parameter
 def introduction(name)
   puts "Hi, my name is #{name}."
@@ -13,7 +15,14 @@ def introduction_with_language(name, language)
   puts "Hi, my name is #{name} and I am learning to program in #{language}."
 end
 
+#Method with an optional parameter
+def introduction_with_language_optional(name, language="Ruby")
+  puts "Hi, my name is #{name} and I am learning to program in #{language}."
+end
 
+introduction(name)
+introduction_with_language(name, "Ruby")
+introduction_with_language_optional(name)
 
 
 
